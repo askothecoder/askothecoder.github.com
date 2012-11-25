@@ -59,7 +59,7 @@ p a:hover{
 }
 
 code{
-  font-size:1.25em;
+  font-size:1em;
   background:#fff;
   color:#000;
 }
@@ -253,7 +253,7 @@ section#content{
 
 .article .article .article-content p{
   color:#555;
-  font-size:1.05em;
+  font-size:.95em;
   line-height:1.7em;
   text-align:justify;
   text-shadow:0px 1px 0px #fff;
