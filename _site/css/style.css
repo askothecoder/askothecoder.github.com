@@ -245,10 +245,38 @@ section#content{
   width:1050px;
 }
 
+.article .article .article-content{
+  float:left;
+  width:500px;
+  margin-top:5px;
+}
+
+.article .article .article-content p{
+  color:#555;
+  font-size:1.05em;
+  line-height:1.7em;
+  text-align:justify;
+  text-shadow:0px 1px 0px #fff;
+}
+
+.article .article .article-content .article-comments{
+  font-size:.7em;
+  border-top:2px solid #000;
+  padding:20px;
+  background:#fff;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.article .article .article-content .article-comments p{
+  margin:0;
+}
+
+
 .article .article .article-side{
   float:left;
   width:500px;
-  margin-right:50px;
+  margin-left:50px;
 }
 
 .article .article .article-side .title{
@@ -265,38 +293,19 @@ section#content{
 }
 
 .article .article .article-side .date{
-  color:#777;
-  font-size:1.1em;
+  width:175px;
+  text-align:center;
+  color:#000;
+  font-size:1.4em;
   text-shadow:0px 1px 0px #fff;
-  text-transform:lowercase;
+  text-transform:uppercase;
+  background:#fff;
+  font-weight:700;
+  font-style:italic;
+  padding:20px;
+  border-left:4px solid #000;
   margin-top:20px;
   margin-bottom:20px;
-}
-
-.article .article .article-content{
-  float:left;
-  width:500px;
-  margin-top:5px;
-}
-
-.article .article .article-content p{
-  color:#555;
-  font-size:1.1em;
-  line-height:1.7em;
-  text-shadow:0px 1px 0px #fff;
-}
-
-.article .article .article-content .article-comments{
-  font-size:.7em;
-  border-top:2px solid #000;
-  padding:20px;
-  background:#fff;
-  margin-top:50px;
-  margin-bottom:50px;
-}
-
-.article .article .article-content .article-comments p{
-  margin:0;
 }
 
 /* ==========================================================================
