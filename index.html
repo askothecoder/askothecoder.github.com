@@ -1,0 +1,23 @@
+---
+layout: default
+title: Journal
+slug: index
+---
+
+<ul class="articles">
+  
+{% for post in site.posts %}
+{% if post.published == true %}
+
+	<li class="article">
+    
+    {% if post.thumbnail %}<div class="thumbnail"><div class="thumbnail-overlay"><a href="{{ post.url }}" title="{{ post.title }}"><span>+</span></a></div><img src="{{ post.thumbnail }}" title="{{ post.title }}"></div>{% endif %}
+    <h2 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <div class="date">{{ post.date | date_to_string }}</div>
+    
+	</li>
+    
+{% endif %}
+{% endfor %}
+
+</ul>

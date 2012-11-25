@@ -1,0 +1,438 @@
+/**
+ * Icons
+ 
+ * Author: @askothecoder (http://twitter.com/askothecoder) / (asko.a.nomm@gmail.com)
+ * Version: 0.01
+ 
+ * Let me take this time to tell you that magic numbers are evil.
+ * I'm using a lot of them here.
+ * You should totally not do the same.
+ * If you do ...
+ * Your dead to me.
+*/
+
+.icons{
+  width:268px;
+  margin-right:50px;
+  margin-bottom:50px;
+  float:left;
+}
+
+.icons .icon{
+  float:left;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+
+.icons .icon.last-in-row{
+  margin-right:0;
+}
+
+.icon.sizes{
+  width:12px;
+  height:12px;
+  border:2px solid #000;
+  box-shadow:0px 1px 0px #fff;
+  border-radius:3px;
+}
+
+.icon.sizem{
+  width:28px;
+  height:28px;
+  border:2px solid #000;
+  box-shadow:0px 1px 0px #fff;
+  border-radius:3px;
+}
+
+.icon.sizeml{
+  width:40px;
+  height:40px;
+  border:4px solid #000;
+  box-shadow:0px 1px 0px #fff;
+  border-radius:3px;
+}
+
+.icon.sizel{
+  width:56px;
+  height:56px;
+  border:6px solid #000;
+  box-shadow:0px 1px 0px #fff;
+  border-radius:3px;
+}
+
+.icon.sizevl{
+  width:112px;
+  height:112px;
+  border:8px solid #000;
+  box-shadow:0px 1px 0px #fff;
+  border-radius:3px;
+}
+
+.icon.sizevl{
+  width:108px;
+  height:108px;
+  border:10px solid #000;
+  box-shadow:0px 1px 0px #fff;
+  border-radius:3px;
+}
+
+/*
+ * Face icon 16x16
+*/
+
+.face-icon.sizes:before, 
+.face-icon.sizes:after{
+  display:block;
+  content:"";
+  width:2px;
+  height:2px;
+  background:#000;
+  box-shadow:0px 1px 0px #fff;
+  margin-left:2px;
+  margin-top:2px;
+}
+
+.face-icon.sizes:after{
+  margin-left:8px;
+  margin-top:-2px;
+}
+
+.face-icon.sizes .icon-inner{
+  height:2px;
+  width:8px;
+  background:#000;
+  margin-left:2px;
+  margin-top:4px;
+  position:absolute;
+}
+
+.face-icon.sizes:hover{
+  border:2px solid #555;
+}
+
+.face-icon.sizes:hover:before,
+.face-icon.sizes:hover:after,
+.face-icon.sizes:hover .icon-inner{
+  background:#555;
+}
+
+/*
+ * Face icon 32x32
+*/
+
+.face-icon.sizem:before, 
+.face-icon.sizem:after{
+  display:block;
+  content:"";
+  width:2px;
+  height:2px;
+  background:#000;
+  box-shadow:0px 1px 0px #fff;
+  margin-left:8px;
+  margin-top:8px;
+}
+
+.face-icon.sizem:after{
+  margin-left:18px;
+  margin-top:-2px;
+}
+
+.face-icon.sizem .icon-inner{
+  height:2px;
+  width:12px;
+  background:#000;
+  margin-left:8px;
+  margin-top:8px;
+  position:absolute;
+}
+
+.face-icon.sizem:hover{
+  border:2px solid #555;
+}
+
+.face-icon.sizem:hover:before,
+.face-icon.sizem:hover:after,
+.face-icon.sizem:hover .icon-inner{
+  background:#555;
+}
+
+/*
+ * Face icon 48x48
+*/
+
+.face-icon.sizeml:before, 
+.face-icon.sizeml:after{
+  display:block;
+  content:"";
+  width:4px;
+  height:4px;
+  background:#000;
+  box-shadow:0px 1px 0px #fff;
+  margin-left:12px;
+  margin-top:12px;
+}
+
+.face-icon.sizeml:after{
+  margin-left:24px;
+  margin-top:-4px;
+}
+
+.face-icon.sizeml .icon-inner{
+  height:4px;
+  width:16px;
+  background:#000;
+  margin-left:12px;
+  margin-top:8px;
+  position:absolute;
+}
+
+.face-icon.sizeml:hover{
+  border:4px solid #555;
+}
+
+.face-icon.sizeml:hover:before,
+.face-icon.sizeml:hover:after,
+.face-icon.sizeml:hover .icon-inner{
+  background:#555;
+}
+
+/*
+ * Face icon 64x64
+*/
+
+.face-icon.sizel:before, 
+.face-icon.sizel:after{
+  display:block;
+  content:"";
+  width:6px;
+  height:6px;
+  background:#000;
+  box-shadow:0px 1px 0px #fff;
+  margin-left:15px;
+  margin-top:15px;
+}
+
+.face-icon.sizel:after{
+  margin-left:35px;
+  margin-top:-6px;
+}
+
+.face-icon.sizel .icon-inner{
+  height:6px;
+  width:25px;
+  background:#000;
+  margin-left:16px;
+  margin-top:13px;
+  position:absolute;
+}
+
+.face-icon.sizel:hover{
+  border:6px solid #555;
+}
+
+.face-icon.sizel:hover:before,
+.face-icon.sizel:hover:after,
+.face-icon.sizel:hover .icon-inner{
+  background:#555;
+}
+
+/*
+ * Face icon 128x128
+*/
+
+.face-icon.sizevl:before, 
+.face-icon.sizevl:after{
+  display:block;
+  content:"";
+  width:10px;
+  height:10px;
+  background:#000;
+  box-shadow:0px 1px 0px #fff;
+  margin-left:25px;
+  margin-top:20px;
+}
+
+.face-icon.sizevl:after{
+  margin-left:74px;
+  margin-top:-10px;
+}
+
+.face-icon.sizevl .icon-inner{
+  height:10px;
+  width:60px;
+  background:#000;
+  margin-left:25px;
+  margin-top:50px;
+  position:absolute;
+}
+
+.face-icon.sizevl:hover{
+  border:10px solid #555;
+}
+
+.face-icon.sizevl:hover:before,
+.face-icon.sizevl:hover:after,
+.face-icon.sizevl:hover .icon-inner{
+  background:#555;
+}
+
+/**
+ * Information icon 16x16
+*/
+.information-icon.sizes:before{
+  display:block;
+  content:"";
+  width:2px;
+  height:2px;
+  background:#000;
+  margin-left:5px;
+  margin-top:2px;
+}
+
+.information-icon.sizes:after{
+  display:block;
+  content:"";
+  width:2px;
+  height:4px;
+  background:#000;
+  margin-left:5px;
+  margin-top:2px;
+}
+
+.information-icon.sizes:hover{
+  border:2px solid #444;
+}
+
+.information-icon:hover.sizes:before,
+.information-icon:hover.sizes:after{
+  background:#555;
+}
+
+/**
+ * Information icon 32x32
+*/
+.information-icon.sizem:before{
+  display:block;
+  content:"";
+  width:2px;
+  height:2px;
+  background:#000;
+  margin-left:13px;
+  margin-top:8px;
+}
+
+.information-icon.sizem:after{
+  display:block;
+  content:"";
+  width:2px;
+  height:8px;
+  background:#000;
+  margin-left:13px;
+  margin-top:2px;
+}
+
+.information-icon.sizem:hover{
+  border:2px solid #444;
+}
+
+.information-icon:hover.sizem:before,
+.information-icon:hover.sizem:after{
+  background:#555;
+}
+
+/**
+ * Information icon 48x48
+*/
+.information-icon.sizeml:before{
+  display:block;
+  content:"";
+  width:4px;
+  height:4px;
+  background:#000;
+  margin-left:18px;
+  margin-top:12px;
+}
+
+.information-icon.sizeml:after{
+  display:block;
+  content:"";
+  width:4px;
+  height:10px;
+  background:#000;
+  margin-left:18px;
+  margin-top:2px;
+}
+
+.information-icon.sizeml:hover{
+  border:4px solid #444;
+}
+
+.information-icon:hover.sizeml:before,
+.information-icon:hover.sizeml:after{
+  background:#555;
+}
+
+/**
+ * Information icon 64x64
+*/
+.information-icon.sizel:before{
+  display:block;
+  content:"";
+  width:6px;
+  height:6px;
+  background:#000;
+  margin-left:25px;
+  margin-top:15px;
+}
+
+.information-icon.sizel:after{
+  display:block;
+  content:"";
+  width:6px;
+  height:14px;
+  background:#000;
+  margin-left:25px;
+  margin-top:4px;
+}
+
+.information-icon.sizel:hover{
+  border:6px solid #444;
+}
+
+.information-icon:hover.sizel:before,
+.information-icon:hover.sizel:after{
+  background:#555;
+}
+
+/**
+ * Information icon 128x128
+*/
+.information-icon.sizevl:before{
+  display:block;
+  content:"";
+  width:10px;
+  height:10px;
+  background:#000;
+  margin-left:48px;
+  margin-top:20px;
+}
+
+.information-icon.sizevl:after{
+  display:block;
+  content:"";
+  width:10px;
+  height:50px;
+  background:#000;
+  margin-left:48px;
+  margin-top:10px;
+}
+
+.information-icon.sizevl:hover{
+  border:10px solid #444;
+}
+
+.information-icon:hover.sizevl:before,
+.information-icon:hover.sizevl:after{
+  background:#555;
+}
+

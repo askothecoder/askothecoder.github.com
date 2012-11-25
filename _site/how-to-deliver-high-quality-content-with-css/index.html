@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>How to deliver high quality content with CSS? - Made By Wickd</title>
+	<link rel="stylesheet" href="/css/reset.css?v1.0" type="text/css">
+	<link rel="stylesheet" href="/css/style.css?v1.0" type="text/css">
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+  
+  
+  <script src="http://balupton.github.com/jquery-syntaxhighlighter/scripts/jquery.syntaxhighlighter.min.js" type="text/javascript"></script>
+  <script type="text/javascript">$.SyntaxHighlighter.init();</script>
+  
+</head>
+</body onload="prettyPrint()">
+
+  <header class="header">
+    
+    <h1><a href="/" title="Made By Wickd">Made By Wickd</a></h1>
+    
+    <nav class="nav" rel="navigation">
+      <a href="/" title="Journal">Journal</a>
+      <a href="/about.html" title="About">About</a>
+      <a class="special" href="/icons.html" title="CSS3 Icons">Icons</a>
+    </nav>
+    
+  </header>
+  
+  <section id="content">
+  <ul class="article">
+  
+	<li class="article">
+    
+    <div class="article-side">
+      <h2 class="title"><a href="" title="">How to deliver high quality content with CSS?</a></h2>
+      <div class="date">22 Nov 2012</div>
+    </div>
+    
+    <div class="article-content">
+      <p>Yesterday I made a joke on Twitter to <a href='https://twitter.com/smashingmag'>@smashingmag</a> saying &#8221;<a href='https://twitter.com/askothecoder/status/271367427089125376'>I suppose <code>(min-connection-speed: 2mb)</code> in CSS would be nice</a>&#8221;. Then <a href='https://twitter.com/smashingmag'>@smashingmag</a> tweeted &#8221;<a href='https://twitter.com/smashingmag/status/271368026937511939'>Agree?</a>&#8221; and a ton of opinions followed. Some agreed, most disagreed. Apparently it&#8217;s very unreliable, like mentioned by <a href='https://twitter.com/respimg'>@respimg</a> and therefore will probably never be implemented by any browser.</p>
+
+<p>Today <a href='https://twitter.com/smashingmag'>@smashingmag</a> tweeted &#8221;<a href='https://twitter.com/smashingmag/status/271595279315243008'>We&#8217;d love to have this article on SmashingMag as well</a>&#8221;. It was then when I realized that my joke was not really a joke after all. Something I did not even think about - a real issue with delivering content to slow and fast connections differently.</p>
+
+<p>We, front-end developers, have to optimize our images to fit a very tiny size so it would play well with third-world countries where the connection speed has not developed much, but that risks a loss of quality of the images and let&#8217;s be honest, we all would love fast loading, high quality images.</p>
+
+<p>So, a media query that I joked about obviously does not exist. But what does? I started thinking and realized page load times are probably the safest way to go, I&#8217;ll be using PHP and <code>microtime()</code> (which, I&#8217;m pretty sure, can be done in a ton of other languages, too) for the example.</p>
+<pre class='highlight'>
+$time = microtime();
+$time = explode(' ', $time);
+$time = $time[1] + $time[0];
+$finish = $time;
+$total_time = round(($finish - $start), 4);
+$too_long = 1;
+
+if($total_time > $too_long){
+	// load stylesheet for a slow connection
+}else{
+	// load stylesheet for a fast connection
+}
+</pre>
+<p>That would, by theory, enable us detect how long did it took for a visitor to load the page and judging by that time, load a stylesheet with either high quality or low quality images. And it&#8217;s not THAT ugly.</p>
+
+<p>However, I&#8217;m really interested in various solutions regarding the subject, so feel free to speak up if you know of any and I will update this article with each reliable and fast method.</p>
+      
+      <div class="article-comments">
+        <p>I'm not a fan of comments, so if you got something interesting to say related to this article, feel free to mention it on Twitter. I'm <a href="http://twitter.com/askothecoder" title="@askothecoder on Twitter">@askothecoder</a>.</p>
+      </div>
+    </div>
+    
+	</li>
+  
+</ul>
+
+  </section>
+    
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36341303-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
+</body>
+</html>
